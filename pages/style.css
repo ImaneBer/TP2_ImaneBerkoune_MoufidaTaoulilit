@@ -12,6 +12,12 @@
   color: #ffffff !important; /* blanc au survol */
 }
 
+/* Trait jaune séparateur */
+.yellow-line {
+  height: 1px;
+  background-color: #f5c518;
+}
+
 /* Icônes réseaux sociaux */
 .social-link {
   font-size: 1.3rem;
