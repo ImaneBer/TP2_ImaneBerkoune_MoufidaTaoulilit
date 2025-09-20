@@ -3,6 +3,17 @@
 .bg-header {
   background-color: #0a0a45; /* bleu nuit */
 }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
 
 .text-gold {
   color: #f5c518 !important; /* doré */
@@ -28,3 +39,34 @@
   color: #f5c518; /* doré au survol */
 }
 
+/* Section Tournage */
+.tournage__facts-title {
+  font-weight: bold;
+  color: #0a0a45;
+}
+
+.tournage__facts-text {
+  font-size: 1rem;
+  color: #333;
+  max-width: 90%; /* pour garder une belle largeur */
+}
+
+.tournage__facts-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f5c518;
+  margin-bottom: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.tournage__facts-label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.tournage__facts-btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+}
