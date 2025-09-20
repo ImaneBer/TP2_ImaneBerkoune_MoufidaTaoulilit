@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TP2 - La La Land</title>
+  <title>TP2 - La La Land | Tournage</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
@@ -27,28 +26,66 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-gold" href="index.html">Accueil</a>
+            <a class="nav-link text-gold" href="Accueil.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-gold" href="tournage.html">Tournage</a>
+            <a class="nav-link text-gold active" href="tournage.html">Tournage</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- CONTENU PRINCIPAL -->
+  <main class="flex-grow-1">
+    <section class="tournage__facts container py-5">
+      <div class="row align-items-center g-5">
+
+        <!-- Image -->
+        <div class="col-md-6">
+          <img src="../img/lalaland.jpg" class="img-fluid rounded-3 tournage__facts-image" alt="Image du tournage">
+        </div>
+
+        <!-- Texte et stats -->
+        <div class="col-md-6">
+          <h2 class="tournage__facts-title mb-3">Faits divers</h2>
+          <p class="tournage__facts-text mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div class="row text-center mb-4">
+            <div class="col-6 mb-3">
+              <h3 class="tournage__facts-number">44M</h3>
+              <p class="tournage__facts-label">Sold for</p>
+            </div>
+            <div class="col-6 mb-3">
+              <h3 class="tournage__facts-number">324B</h3>
+              <p class="tournage__facts-label">Daily content uploaded</p>
+            </div>
+            <div class="col-6 mb-3">
+              <h3 class="tournage__facts-number">230K</h3>
+              <p class="tournage__facts-label">Hourly active users</p>
+            </div>
+            <div class="col-6 mb-3">
+              <h3 class="tournage__facts-number">12</h3>
+              <p class="tournage__facts-label">Awards won</p>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-outline-warning tournage__facts-btn">Learn more</a>
+        </div>
+      </div>
+    </section>
+  </main> 
+
 
   <!-- FOOTER -->
   <footer class="footer bg-header mt-auto">
-    <!-- Première ligne avec coordonnées -->
     <div class="container py-3 d-flex justify-content-between align-items-center flex-wrap text-gold">
-      <!-- Coordonnées à gauche -->
       <div>
         <i class="bi bi-telephone"></i> +111 000 0000 | 
         <i class="bi bi-envelope"></i> hello@pruthvi.design
       </div>
-
-      <!-- Noms des étudiants + icônes sociales à droite -->
       <div class="d-flex align-items-center ms-auto">
         <div class="fw-bold me-3">Berkoune Imane - Moufida Taoulilit</div>
         <a href="#" class="mx-1 social-link"><i class="bi bi-facebook"></i></a>
@@ -57,11 +94,7 @@
         <a href="#" class="mx-1 social-link"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
-    
-    <!-- Trait séparateur jaune -->
     <div class="yellow-line w-100"></div>
-    
-    <!-- Deuxième ligne avec le nom du cégep -->
     <div class="container py-2 text-start text-gold">
       <strong>Cégep de Trois-Rivières</strong>
     </div> 
