@@ -1,11 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TP2 - La La Land</title>
-  <!-- Bootstrap CSS -->
+  <title>TP2 - La La Land | Tournage</title>
+  <!-- Bootstrap CSS --> 
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -17,7 +18,7 @@
   <!-- HEADER -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-header">
     <div class="container">
-      <a class="navbar-brand fw-bold text-gold" href="#">
+      <a class="navbar-brand fw-bold text-gold" href="Accueil.html">
         <img src="../img/logo.png" alt="Logo La La Land" height="100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -27,41 +28,293 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-gold" href="index.html">Accueil</a>
+            <a class="nav-link text-gold" href="Accueil.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-gold" href="tournage.html">Tournage</a>
+            <a class="nav-link text-gold active" href="tournage.html">Tournage</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+    
 
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+    <!-- Section Faits divers -->
+    <section class="tournage__facts container py-5 my-4">
+      <div class="row align-items-center g-5">
+
+        <!-- Image -->
+        <div class="col-md-6">
+          <img src="../img/lalaland.jpg" class="img-fluid rounded-3 tournage__facts-image" alt="Image du tournage">
+        </div>
+
+        <!-- Texte + stats -->
+        <div class="col-md-6">
+          <h2 class="tournage__facts-title mb-3">Faits divers</h2>
+          <p class="tournage__facts-text mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <!-- Grille 2 colonnes pour stats -->
+          <div class="row">
+            <div class="col-6 mb-4">
+              <h3 class="tournage__facts-number">44M</h3>
+              <p class="tournage__facts-label">Sold for</p>
+            </div>
+            <div class="col-6 mb-4">
+              <h3 class="tournage__facts-number">324B</h3>
+              <p class="tournage__facts-label">Daily content uploaded</p>
+            </div>
+            <div class="col-6 mb-4">
+              <h3 class="tournage__facts-number">230K</h3>
+              <p class="tournage__facts-label">Hourly active users</p>
+            </div>
+            <div class="col-6 mb-4">
+              <h3 class="tournage__facts-number">12</h3>
+              <p class="tournage__facts-label">Awards won</p>
+            </div>
+          </div>
+
+          <!-- Bouton sous les stats -->
+          <a href="#" class="btn btn-outline-warning tournage__facts-btn mt-3">Learn more</a>
+        </div>
+      </div>
+      
+
+    </section>
+
+    <!-- Premier trait séparateur -->
+    <div class="container">
+      <hr class="my-5">
+    </div>
+
+    <!-- Section Photos du tournage -->
+    <section class="tournage__photos container py-5 my-4">
+      
+
+      <div class="row g-4">
+        <!-- Photos 1 et 2 - côte à côte en responsive, grille 3 en desktop -->
+        <div class="col-6 col-xl-4">
+          <img src="../img/acteur2.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 1">
+        </div>
+        <div class="col-6 col-xl-4">
+          <img src="../img/coulisse.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 2">
+        </div>
+        
+        <!-- Photo 3 - centrée en responsive -->
+        <div class="col-8 offset-2 col-xl-4 offset-xl-0">
+          <img src="../img/acteurs5.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 3">
+        </div>
+
+        <!-- Photos 4 et 5 - côte à côte en responsive, grille 3 en desktop -->
+        <div class="col-6 col-xl-4">
+          <img src="../img/acteur3.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 4">
+        </div>
+        <div class="col-6 col-xl-4">
+          <img src="../img/coulisse2.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 5">
+        </div>
+        
+        <!-- Photo 6 - centrée en responsive -->
+        <div class="col-8 offset-2 col-xl-4 offset-xl-0">
+          <img src="../img/coulisse3.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 6">
+        </div>
+      </div>
+    </section>
+
+    <!-- Deuxième trait séparateur -->
+    <div class="container">
+      <hr class="my-5">
+    </div>
+
+    <!-- Section Accordéon -->
+    <section class="tournage__accordion container py-5 my-4">
+      
+      <!-- Titre et paragraphe d'introduction -->
+      <div class="text-center mb-5">
+        <h2 class="mb-3">Présentation de la direction artistique</h2>
+        <p class="lead">Découvrez les secrets de création et les choix artistiques qui ont donné vie à l'univers visuel et musical de La La Land, à travers les témoignages de l'équipe créative.</p>
+      </div>
+      
+      <div class="row g-4">
+        
+        <!-- Colonne gauche - Accordéons -->
+        <div class="col-md-6">
+          <div class="accordion" id="accordionLeft">
+            
+            <!-- Question 1 - OUVERTE avec contenu visible -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft1" aria-expanded="true" aria-controls="collapseLeft1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                </button>
+              </h3>
+              <div id="collapseLeft1" class="accordion-collapse collapse show" data-bs-parent="#accordionLeft">
+                <div class="accordion-body">
+                  Boiler room yield to broker money balance bullish! What's a Euro sure thing hawkish federal reserve. The Financial Review market advantage for life not making jack hunting elephants insuring your future get rich investment property. Be life confident big swinging click not a businessman - I'm a business man perplexed retail investor financier kickstarter profit risky business. Sweet equity all about the Benjamins bonds stashin' loot making bread and honey private equity stagflation financial intelligence venture capitalist.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 - FERMÉE -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft2" aria-expanded="false" aria-controls="collapseLeft2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                </button>
+              </h3>
+              <div id="collapseLeft2" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                <div class="accordion-body">
+                  Contenu de la deuxième question.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 - FERMÉE -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft3" aria-expanded="false" aria-controls="collapseLeft3">
+                  All the boats rise life in the fast lane not a businessman?
+                </button>
+              </h3>
+              <div id="collapseLeft3" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                <div class="accordion-body">
+                  Contenu de la troisième question.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 - FERMÉE -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft4" aria-expanded="false" aria-controls="collapseLeft4">
+                  Isabella Blow pleats please runway classics plus size models?
+                </button>
+              </h3>
+              <div id="collapseLeft4" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                <div class="accordion-body">
+                  Contenu de la quatrième question.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 - FERMÉE -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft5" aria-expanded="false" aria-controls="collapseLeft5">
+                  Free love nickel shank dust left hand twill regular fit hipster jeans biker boots?
+                </button>
+              </h3>
+              <div id="collapseLeft5" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                <div class="accordion-body">
+                  Contenu de la cinquième question.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Colonne droite - Accordéons tous fermés -->
+        <div class="col-md-6">
+          <div class="accordion" id="accordionRight">
+            
+            <!-- Question 1 - FERMÉE et PLUS PETITE -->
+            <div class="accordion-item mb-2">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight1" aria-expanded="false" aria-controls="collapseRight1">
+                  <span class="small">They say money isn't everything private beach rich beyond?</span>
+                </button>
+              </h3>
+              <div id="collapseRight1" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                <div class="accordion-body">
+                  Contenu de la première question de droite.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 - FERMÉE -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight2" aria-expanded="false" aria-controls="collapseRight2">
+                  Is anybody looking hunting elephants securities and exchange?
+                </button>
+              </h3>
+              <div id="collapseRight2" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                <div class="accordion-body">
+                  Contenu de la deuxième question de droite.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 - FERMÉE -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight3" aria-expanded="false" aria-controls="collapseRight3">
+                  Isabella Blow pleats please runway classics plus size models?
+                </button>
+              </h3>
+              <div id="collapseRight3" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                <div class="accordion-body">
+                  Contenu de la troisième question de droite.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 - FERMÉE -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight4" aria-expanded="false" aria-controls="collapseRight4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                </button>
+              </h3>
+              <div id="collapseRight4" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                <div class="accordion-body">
+                  Contenu de la quatrième question de droite.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 - FERMÉE -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight5" aria-expanded="false" aria-controls="collapseRight5">
+                  All the boats rise life in the fast lane not a businessman?
+                </button>
+              </h3>
+              <div id="collapseRight5" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                <div class="accordion-body">
+                  Contenu de la cinquième question de droite.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+   
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer bg-header mt-auto">
-    <!-- Première ligne avec coordonnées -->
     <div class="container py-3 d-flex justify-content-between align-items-center flex-wrap text-gold">
-      <!-- Coordonnées à gauche -->
       <div>
         <i class="bi bi-telephone"></i> +111 000 0000 | 
         <i class="bi bi-envelope"></i> hello@pruthvi.design
       </div>
-
-      <!-- Noms des étudiants + icônes sociales à droite -->
       <div class="d-flex align-items-center ms-auto">
         <div class="fw-bold me-3">Berkoune Imane - Moufida Taoulilit</div>
-        <a href="#" class="mx-1 social-link"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="mx-1 social-link"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="mx-1 social-link"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="mx-1 social-link"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.cegeptr.qc.ca" class="mx-1 social-link"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.cegeptr.qc.ca" class="mx-1 social-link"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.cegeptr.qc.ca" class="mx-1 social-link"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.cegeptr.qc.ca" class="mx-1 social-link"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
-    
-    <!-- Trait séparateur jaune -->
     <div class="yellow-line w-100"></div>
-    
-    <!-- Deuxième ligne avec le nom du cégep -->
     <div class="container py-2 text-start text-gold">
       <strong>Cégep de Trois-Rivières</strong>
     </div> 
