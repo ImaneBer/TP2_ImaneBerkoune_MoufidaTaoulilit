@@ -94,4 +94,13 @@ h1, h2, h3, .navbar-brand {
 .tournage__photo:hover {
   transform: scale(1.05);
 }
-
+/* Responsive pour la section Faits divers - Image en bas sur mobile */
+@media (max-width: 767px) {
+  .tournage__facts .col-md-6:first-child {
+    order: 2; /* Image en bas */
+  }
+  
+  .tournage__facts .col-md-6:last-child {
+    order: 1; /* Contenu texte en haut */
+  }
+}
