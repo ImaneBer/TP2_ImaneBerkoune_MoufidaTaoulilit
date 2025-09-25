@@ -38,6 +38,67 @@
       </div>
     </div>
   </nav>
+  <main id="content">
+  <!-- PRÉSENTATION + CARROUSEL (5 slides) -->
+  <section class="container py-5">
+    <div class="row align-items-center g-4">
+      <!-- Col. texte (gauche) -->
+      <div class="col-12 col-lg-5">
+        <h1 class="h3 mb-3">Présentation de l’œuvre</h1>
+        <p class="text-muted">
+          <em>La La Land</em> célèbre les rêves et leurs compromis. Entre jazz, chorégraphies
+          et couleurs saturées, Mia (Emma Stone) et Sebastian (Ryan Gosling) se cherchent à Los Angeles.
+        </p>
+        <div class="d-flex gap-2">
+          <a class="btn btn-primary btn-sm" href="#" aria-label="Regarder la bande-annonce">Bande-annonce</a>
+          <a class="btn btn-outline-secondary btn-sm" href="#" aria-label="En savoir plus">En savoir plus</a>
+        </div>
+      </div>
+
+      <!-- Col. carrousel (droite) -->
+      <div class="col-12 col-lg-7">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500" aria-label="Carrousel (5 images)">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Diapo 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Diapo 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Diapo 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Diapo 4"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Diapo 5"></button>
+          </div>
+
+          <div class="carousel-inner rounded-3 overflow-hidden">
+            <div class="carousel-item active">
+              <img src="../img/slider-1.jpg" class="d-block w-100" alt="Plan de Los Angeles au crépuscule">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/slider-2.jpg" class="d-block w-100" alt="Griffith Observatory de nuit">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/slider-3.jpg" class="d-block w-100" alt="Couple dansant au coucher du soleil">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/slider-4.jpg" class="d-block w-100" alt="Piano et ambiance jazz en club">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/slider-5.jpg" class="d-block w-100" alt="Funiculaire Angels Flight en soirée">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Précédent</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Suivant</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="container my-5">
+  <!-- (on ajoutera Section 2 puis Section 3 dans les prochaines étapes) -->
+</main>
+                        
 
 
   <!-- FOOTER -->
