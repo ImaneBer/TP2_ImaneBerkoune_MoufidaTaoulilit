@@ -37,4 +37,19 @@
   position: static; width:auto; height:auto; margin:0; clip:auto;
   padding: .5rem .75rem; background:#000; color:#fff; display:inline-block;
 }
+/* -- Section 1 : carrousel carré sur mobile (maquette) -- */
+@media (max-width: 575.98px) {
+  #heroCarousel .carousel-item img {
+    aspect-ratio: 1 / 1;     /* carré */
+    object-fit: cover;        /* recadre proprement */
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Pour les portraits (Section 2) : */
+.card-img-top {
+  aspect-ratio: 4 / 5;       /* même gabarit que Figma */
+  object-fit: cover;
+}
 
