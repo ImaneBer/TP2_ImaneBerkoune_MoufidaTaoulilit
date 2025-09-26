@@ -57,7 +57,13 @@
 
       <!-- Col. carrousel (droite) -->
       <div class="col-12 col-lg-7">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500" aria-label="Carrousel (5 images)">
+        <div id="heroCarousel"
+     class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="4500"
+     role="region"
+     aria-label="Carrousel (5 images)">
+
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Diapo 1"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Diapo 2"></button>
@@ -66,7 +72,7 @@
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Diapo 5"></button>
           </div>
 
-          <div class="carousel-inner rounded-3 overflow-hidden">
+          <div class="carousel-inner rounded-3 overflow-hidden" aria-live="polite">
             <div class="carousel-item active">
               <img src="../img/slider-1.jpg" class="d-block w-100" alt="Plan de Los Angeles au crépuscule">
             </div>
