@@ -155,3 +155,8 @@ footer {
     order: 1; /* Contenu texte en haut */
   }
 }
+/* Section 3 (success) — ratio image conforme à la maquette */
+.success__img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
