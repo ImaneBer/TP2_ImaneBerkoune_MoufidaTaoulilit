@@ -89,11 +89,11 @@ footer {
 /* Icônes réseaux sociaux */
 .social-link {
   font-size: 1.3rem;
-  color: #0d6efd; /* bleu Bootstrap */
+  color: #0d6efd; 
 }
 
 .social-link:hover {
-  color: #f5c518; /* doré au survol */
+  color: #f5c518; 
 }
 /* Skip link visible au focus */
 .visually-hidden-focusable:not(:focus):not(:focus-within){
@@ -151,7 +151,7 @@ footer {
   font-weight: bold;
 }
 
-/* Section Photos - Gallery avec Bootstrap */
+/* Section Photos  */
 .gallery h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -173,10 +173,10 @@ footer {
 /* Responsive pour la section Faits divers */
 @media (max-width: 767px) {
   .facts .col-md-6:first-child {
-    order: 2; /* Image en bas */
+    order: 2; 
   }
   
   .facts .col-md-6:last-child {
-    order: 1; /* Contenu texte en haut */
+    order: 1; 
   }
 }
