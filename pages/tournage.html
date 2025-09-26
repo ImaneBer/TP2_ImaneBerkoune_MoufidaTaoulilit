@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TP2 - La La Land | Tournage</title>
-  <!-- Bootstrap CSS --> 
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
-
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -18,7 +18,7 @@
   <!-- HEADER -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-header">
     <div class="container">
-      <a class="navbar-brand fw-bold text-gold" href="Accueil.html">
+      <a class="navbar-brand fw-bold text-gold" href="index.html">
         <img src="../img/logo.png" alt="Logo La La Land" height="100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-gold" href="Accueil.html">Accueil</a>
+            <a class="nav-link text-gold" href="index.html">Accueil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-gold active" href="tournage.html">Tournage</a>
@@ -42,47 +42,51 @@
   <!-- CONTENU PRINCIPAL -->
   <main>
     <!-- Section Faits divers -->
-    <section class="tournage__facts container py-5 my-4">
+    <section class="facts container py-5 my-4">
       <div class="row align-items-center g-5">
 
         <!-- Image -->
         <div class="col-md-6">
-          <img src="../img/lalaland.jpg" class="img-fluid rounded-3 tournage__facts-image" alt="Image du tournage">
+          <img src="../img/lalaland.jpg" class="img-fluid rounded-3 facts__image" alt="Image du tournage">
         </div>
 
         <!-- Texte + stats -->
         <div class="col-md-6">
-          <h2 class="tournage__facts-title mb-3">Faits divers</h2>
-          <p class="tournage__facts-text mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h2 class="facts__title mb-3">Faits divers</h2>
+          <p class="facts__text mb-4">
+            Le tournage de "La La Land" en 2016 a transformé Los Angeles en plateau de cinéma géant. La séquence d'ouverture avec 100 danseurs a nécessité la fermeture d'une section d'autoroute pendant plusieurs heures. Cette production de Damien Chazelle a généré 15 millions de dollars de retombées économiques et employé 3000 personnes.
           </p>
 
           <!-- Grille 2 colonnes pour stats -->
           <div class="row">
             <div class="col-6 mb-4">
-              <h3 class="tournage__facts-number">44M</h3>
-              <p class="tournage__facts-label">Sold for</p>
+              <h3 class="facts__number">448M$</h3>
+              <p class="facts__label">Recettes mondiales</p>
             </div>
             <div class="col-6 mb-4">
-              <h3 class="tournage__facts-number">324B</h3>
-              <p class="tournage__facts-label">Daily content uploaded</p>
+              <h3 class="facts__number">14</h3>
+              <p class="facts__label">Nominations aux Oscars</p>
             </div>
             <div class="col-6 mb-4">
-              <h3 class="tournage__facts-number">230K</h3>
-              <p class="tournage__facts-label">Hourly active users</p>
+              <h3 class="facts__number">6</h3>
+              <p class="facts__label">Oscars remportés</p>
             </div>
             <div class="col-6 mb-4">
-              <h3 class="tournage__facts-number">12</h3>
-              <p class="tournage__facts-label">Awards won</p>
+              <h3 class="facts__number">128</h3>
+              <p class="facts__label">Minutes de film</p>
             </div>
           </div>
 
           <!-- Bouton sous les stats -->
-          <a href="#" class="btn btn-outline-warning tournage__facts-btn mt-3">Learn more</a>
+          <a href="https://www.imdb.com/title/tt3783958/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-outline-warning facts__btn--primary mt-3">
+             En savoir plus
+          </a>
         </div>
-      </div>
-      
 
+      </div>
     </section>
 
     <!-- Premier trait séparateur -->
@@ -91,34 +95,44 @@
     </div>
 
     <!-- Section Photos du tournage -->
-    <section class="tournage__photos container py-5 my-4">
-      
-
+    <section class="gallery container py-5 my-4">
       <div class="row g-4">
         <!-- Photos 1 et 2 - côte à côte en responsive, grille 3 en desktop -->
         <div class="col-6 col-xl-4">
-          <img src="../img/acteur2.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 1">
+          <div class="ratio ratio-4x3">
+            <img src="../img/acteur2.jpg" class="img-fluid rounded-3 gallery__item" alt="Acteurs en coulisses">
+          </div>
         </div>
         <div class="col-6 col-xl-4">
-          <img src="../img/coulisse.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 2">
+          <div class="ratio ratio-4x3">
+            <img src="../img/coulisse.jpg" class="img-fluid rounded-3 gallery__item" alt="Coulisses du tournage">
+          </div>
         </div>
         
         <!-- Photo 3 - centrée en responsive -->
         <div class="col-8 offset-2 col-xl-4 offset-xl-0">
-          <img src="../img/acteurs5.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 3">
+          <div class="ratio ratio-4x3">
+            <img src="../img/acteurs5.jpg" class="img-fluid rounded-3 gallery__item" alt="Équipe artistique">
+          </div>
         </div>
 
         <!-- Photos 4 et 5 - côte à côte en responsive, grille 3 en desktop -->
         <div class="col-6 col-xl-4">
-          <img src="../img/acteur3.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 4">
+          <div class="ratio ratio-4x3">
+            <img src="../img/acteur3.jpg" class="img-fluid rounded-3 gallery__item" alt="Direction artistique">
+          </div>
         </div>
         <div class="col-6 col-xl-4">
-          <img src="../img/coulisse2.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 5">
+          <div class="ratio ratio-4x3">
+            <img src="../img/coulisse2.jpg" class="img-fluid rounded-3 gallery__item" alt="Préparation scène">
+          </div>
         </div>
         
         <!-- Photo 6 - centrée en responsive -->
         <div class="col-8 offset-2 col-xl-4 offset-xl-0">
-          <img src="../img/coulisse3.jpg" class="img-fluid rounded-3 tournage__photo" alt="Bloopers 6">
+          <div class="ratio ratio-4x3">
+            <img src="../img/coulisse3.jpg" class="img-fluid rounded-3 gallery__item" alt="Moments détente">
+          </div>
         </div>
       </div>
     </section>
@@ -129,7 +143,7 @@
     </div>
 
     <!-- Section Accordéon -->
-    <section class="tournage__accordion container py-5 my-4">
+    <section class="interview container py-5 my-4">
       
       <!-- Titre et paragraphe d'introduction -->
       <div class="text-center mb-5">
@@ -147,12 +161,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft1" aria-expanded="true" aria-controls="collapseLeft1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                  Comment l'équipe a-t-elle créé l'univers visuel unique de La La Land ?
                 </button>
               </h3>
               <div id="collapseLeft1" class="accordion-collapse collapse show" data-bs-parent="#accordionLeft">
                 <div class="accordion-body">
-                  Boiler room yield to broker money balance bullish! What's a Euro sure thing hawkish federal reserve. The Financial Review market advantage for life not making jack hunting elephants insuring your future get rich investment property. Be life confident big swinging click not a businessman - I'm a business man perplexed retail investor financier kickstarter profit risky business. Sweet equity all about the Benjamins bonds stashin' loot making bread and honey private equity stagflation financial intelligence venture capitalist.
+                  La direction artistique de La La Land s'inspire des comédies musicales classiques d'Hollywood tout en apportant une touche contemporaine. Chaque couleur, chaque costume et chaque décor ont été soigneusement choisis pour créer une atmosphère onirique qui reflète les rêves et les aspirations des personnages principaux. L'utilisation de palettes de couleurs vives et contrastées permet de distinguer les différentes émotions et phases narratives du film.
                 </div>
               </div>
             </div>
@@ -161,12 +175,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft2" aria-expanded="false" aria-controls="collapseLeft2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                  Quels sont les défis de la création des costumes pour une comédie musicale ?
                 </button>
               </h3>
               <div id="collapseLeft2" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
                 <div class="accordion-body">
-                  Contenu de la deuxième question.
+                  La création des costumes pour La La Land nécessitait un équilibre délicat entre l'élégance classique et la modernité. Chaque tenue devait permettre une liberté de mouvement totale pour les séquences dansées, tout en reflétant la personnalité et l'évolution des personnages. La célèbre robe jaune d'Emma Stone, par exemple, est devenue iconique grâce à sa capacité à capturer la lumière et à créer un impact visuel saisissant.
                 </div>
               </div>
             </div>
@@ -175,12 +189,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft3" aria-expanded="false" aria-controls="collapseLeft3">
-                  All the boats rise life in the fast lane not a businessman?
+                  Comment la musique influence-t-elle les choix visuels du film ?
                 </button>
               </h3>
               <div id="collapseLeft3" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
                 <div class="accordion-body">
-                  Contenu de la troisième question.
+                  La bande sonore de La La Land a été conçue en parfaite harmonie avec les éléments visuels. Chaque mélodie correspond à une palette de couleurs spécifique, et les mouvements de caméra suivent le rythme musical. Cette synergie entre son et image crée une expérience cinématographique immersive où chaque note résonne avec les choix esthétiques du film.
                 </div>
               </div>
             </div>
@@ -189,12 +203,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft4" aria-expanded="false" aria-controls="collapseLeft4">
-                  Isabella Blow pleats please runway classics plus size models?
+                  Quelles techniques ont été utilisées pour les séquences de danse ?
                 </button>
               </h3>
               <div id="collapseLeft4" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
                 <div class="accordion-body">
-                  Contenu de la quatrième question.
+                  Les séquences de danse de La La Land combinent chorégraphie traditionnelle et innovation technique moderne. L'utilisation de grues et de steadicams permet des mouvements de caméra fluides qui accompagnent parfaitement les danseurs. L'éclairage dynamique et les changements de décors en temps réel créent une magie visuelle qui transporte le spectateur dans l'univers des personnages.
                 </div>
               </div>
             </div>
@@ -203,12 +217,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft5" aria-expanded="false" aria-controls="collapseLeft5">
-                  Free love nickel shank dust left hand twill regular fit hipster jeans biker boots?
+                  Quel rôle jouent les décors dans la narration du film ?
                 </button>
               </h3>
               <div id="collapseLeft5" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
                 <div class="accordion-body">
-                  Contenu de la cinquième question.
+                  Les décors de La La Land ne sont pas de simples arrière-plans, mais de véritables personnages qui évoluent avec l'histoire. De l'observatoire Griffith au café de Mia, chaque lieu raconte une partie de l'histoire d'amour et des rêves brisés. L'architecture de Los Angeles devient ainsi le témoin silencieux des espoirs et des désillusions des protagonistes.
                 </div>
               </div>
             </div>
@@ -224,12 +238,12 @@
             <div class="accordion-item mb-2">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight1" aria-expanded="false" aria-controls="collapseRight1">
-                  <span class="small">They say money isn't everything private beach rich beyond?</span>
+                  <span class="small">Comment le film rend-il hommage aux classiques d'Hollywood ?</span>
                 </button>
               </h3>
               <div id="collapseRight1" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
                 <div class="accordion-body">
-                  Contenu de la première question de droite.
+                  La La Land multiplie les références aux grands classiques du cinéma musical américain, de "Singin' in the Rain" à "Casablanca". Ces hommages se retrouvent dans les cadrages, les mouvements de caméra, et même dans certains dialogues, créant un pont entre l'âge d'or d'Hollywood et le cinéma contemporain.
                 </div>
               </div>
             </div>
@@ -238,12 +252,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight2" aria-expanded="false" aria-controls="collapseRight2">
-                  Is anybody looking hunting elephants securities and exchange?
+                  Quels ont été les principaux défis techniques du tournage ?
                 </button>
               </h3>
               <div id="collapseRight2" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
                 <div class="accordion-body">
-                  Contenu de la deuxième question de droite.
+                  Le tournage de La La Land a nécessité une coordination parfaite entre les équipes technique, artistique et musicale. La synchronisation des playbacks, l'éclairage des séquences nocturnes, et la gestion des foules lors des scènes de groupe ont représenté des défis majeurs relevés avec brio par l'équipe de production.
                 </div>
               </div>
             </div>
@@ -252,12 +266,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight3" aria-expanded="false" aria-controls="collapseRight3">
-                  Isabella Blow pleats please runway classics plus size models?
+                  Comment les acteurs se sont-ils préparés aux séquences musicales ?
                 </button>
               </h3>
               <div id="collapseRight3" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
                 <div class="accordion-body">
-                  Contenu de la troisième question de droite.
+                  Emma Stone et Ryan Gosling ont suivi plusieurs mois de préparation intensive incluant des cours de chant, de danse et de piano. Cette formation leur a permis d'interpréter leurs propres chansons et de réaliser eux-mêmes la plupart des chorégraphies, apportant une authenticité rare aux performances musicales du film.
                 </div>
               </div>
             </div>
@@ -266,12 +280,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight4" aria-expanded="false" aria-controls="collapseRight4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                  Quel impact la photographie a-t-elle eu sur l'ambiance du film ?
                 </button>
               </h3>
               <div id="collapseRight4" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
                 <div class="accordion-body">
-                  Contenu de la quatrième question de droite.
+                  La photographie de La La Land utilise des contrastes saisissants entre les tons chauds et froids pour exprimer les émotions des personnages. Les couchers de soleil dorés de Los Angeles contrastent avec les bleus profonds de la nuit, créant une esthétique visuelle qui soutient parfaitement la narration émotionnelle du film.
                 </div>
               </div>
             </div>
@@ -280,12 +294,12 @@
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight5" aria-expanded="false" aria-controls="collapseRight5">
-                  All the boats rise life in the fast lane not a businessman?
+                  Quels sont les secrets de la post-production du film ?
                 </button>
               </h3>
               <div id="collapseRight5" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
                 <div class="accordion-body">
-                  Contenu de la cinquième question de droite.
+                  La post-production de La La Land a nécessité un travail minutieux sur l'étalonnage des couleurs et la synchronisation audio-vidéo. Les effets visuels subtils, comme l'extension des décors et l'amélioration des éclairages, ont été intégrés de manière imperceptible pour préserver l'authenticité des performances tout en magnifiant l'aspect visuel du film.
                 </div>
               </div>
             </div>
